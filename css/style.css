@@ -1,0 +1,96 @@
+body {
+    background-color: #3a3a3a;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+    
+    h1 {
+    text-align: center;
+    color: #c0c0c0;
+    }
+    
+    /* Окружность формы */
+    form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #444444;
+    border: 2px solid #686868;
+    border-radius: 20px;
+    }
+    
+    /* Текст формы */
+    form label {
+    font-weight: bold;
+    margin-top: 12px;
+    display: block;
+    color: #c0c0c0;
+    letter-spacing: 3px;
+    }
+    
+    /* Поля в форме */
+    form input[type="text"],
+    form select,
+    form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 2px;
+    border: 2px solid #acacac;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+    
+    .form-button{
+    background-color: #7c7c7c;
+    color: #4b1102;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: bold;
+    border: 2px solid #352828;
+    } 
+    
+    .form-button:hover {
+    background-color: #ffffff;
+    border: 2px solid #696661;
+    }
+    
+    .modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color:#111111;
+    }
+    
+    .modal-content {
+    background-color: #242424;
+    margin: 10% auto;
+    padding: 20px;
+    border: 2px solid #5a5a5a;
+    width: 80%;
+    border-radius: 10px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #797979;
+    }
+    
+    .close {
+    color: #4b4b4b;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 1px;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: #5e5e5e;
+    cursor: pointer;
+    }

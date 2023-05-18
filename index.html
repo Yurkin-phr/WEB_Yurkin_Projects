@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Управление проектами</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<h1>Назначь менеджера на проект</h1>
+
+<form id="order-form">
+<label for="manager-select">Менеджер:</label>
+<select id="manager-select" required>
+<option value="Выберите Менеджера">Менеджер</option>
+<option value="Юркин А.Ю.">Юркин А.Ю.</option>
+<option value="Травкин И.А.">Травкин И.А.</option>
+<option value="Никитин И.Н.">Никитин И.Н.</option>
+</select>
+
+<label for="last-name-input">Фамилия:</label>
+<input type="text" id="last-name-input" required>
+
+<label for="first-name-input">Имя:</label>
+<input type="text" id="first-name-input" required>
+
+<label for="patronymic-input">Отчество:</label>
+<input type="text" id="patronymic-input">
+
+<label for="urgency-select">Уровень сложности:</label>
+<select id="urgency-select" required>
+<option value="">Выберите уровень сложности</option>
+<option value="ALARM HELP">ALARM HELP</option>
+<option value="Терпимо">Терпимо</option>
+<option value="Задачка легкая">Задачка легкая</option>
+</select>
+
+<label for="deadline-input">Дедлайн:</label>
+<input type="date" id="deadline-input" required>
+
+<label for="description-textarea">Описание проекта:</label>
+<textarea id="description-textarea" required></textarea>
+
+<label for="approval-select">Тестировщик проекта:</label>
+<select id="approval-select" required>
+<option value="">Выберите тестировщика</option>
+<option value="Зеленский И.И.">Зеленский И.И.</option>
+<option value="Пестунов С.Н.">Пестунов С.Н.</option>
+<option value="Лузгин К.Л.">Лузгин К.Л.</option>
+</select>
+
+<button class="form-button">Назначить менеджера</button>
+</form>
+
+<div id="order-preview-modal" class="modal">
+<div class="modal-content">
+<span class="close">&times;</span>
+<h2>Предварительный просмотр назначения</h2>
+<p id="order-preview"></p>
+<button id="confirm-button">Подтвердить</button>
+</div>
+</div>
+<script type="text/javascript" src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
